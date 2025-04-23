@@ -1,0 +1,13 @@
+<script>
+    import Profile from "@/custom/Profile.svelte";
+</script>
+
+# **About**
+
+<Profile />
+
+i'm a developer from Los Angeles living in Provo while attending BYU. 
+
+i'm a founder, father, husband, and son of God in that reverse order.
+
+i like to build things that people really like, as well as things i simply want myself
