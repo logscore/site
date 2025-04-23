@@ -1,1 +1,1 @@
-<img alt="Logan Reeder" class="h-36 w-36 rounded-full object-cover" src="/pfp.jpg" />
+<img alt="Logan Reeder" class="h-40 w-40 rounded-full object-cover" src="/pfp.jpg" />
