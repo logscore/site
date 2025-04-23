@@ -3,5 +3,5 @@
 </script>
 
 <div class="prose mx-6 dark:prose-dark">
-	<Home /><Home /><Home /><Home />
+	<Home />
 </div>
