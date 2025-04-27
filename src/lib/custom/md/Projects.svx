@@ -1,1 +1,24 @@
-# **Projects**
+<script>
+	import * as Table from '$lib/components/ui/table';
+</script>
+
+# **My Stuff**
+
+<Table.Root>
+	<Table.Header>
+		<Table.Row>
+			<Table.Head>Name</Table.Head>
+			<Table.Head>Description</Table.Head>
+			<Table.Head>Source</Table.Head>
+		</Table.Row>
+	</Table.Header>
+	<Table.Body>
+			<Table.Row>
+				<Table.Cell>Borea.dev</Table.Cell>
+				<Table.Cell>Open source SDK generation from OpenAPI</Table.Cell>
+				<Table.Cell>
+					<a href="https://borea.dev/" target="_blank" rel="noopener noreferrer">Site</a>
+				</Table.Cell>
+			</Table.Row>
+	</Table.Body>
+</Table.Root>
