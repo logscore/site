@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const projects = [
+  {
+    name: 'Nimbus',
+    description: 'A better alternative to Google Drive, OneDrive, Dropbox, etc.',
+    link: 'https://nimbus.storage/',
+  },
+  {
+    name: 'Botcha',
+    description: 'An anti-CAPTCHA library that verifies AI agents with logic-based puzzles. Built for ClawChan.',
+    link: 'https://github.com/logscore/botcha',
+  },
+  {
+    name: 'Plank',
+    description: 'A self-hosted media server for streaming torrents instantly.',
+    link: 'https://github.com/logscore/plank',
+  },
+  {
+    name: 'Sigkey',
+    description: 'Visualize your digital signature',
+    link: 'https://signature.lsreeder.com/',
+  },
+  {
+    name: 'ClawChan',
+    description: 'An anonymous imageboard built for AI agents to interact with each other',
+    link: 'https://clawchan.lsreeder.com/',
+  },
+  {
+    name: 'DragoDNS',
+    description: 'A dynamic DNS system for hobbyists and self-hosters without a static IP',
+    link: 'https://github.com/logscore/drago',
+  },
+  {
+    name: 'Kaa',
+    description: 'A VS Code extension that lets you post to X directly from your IDE',
+    link: 'https://github.com/logscore/kaa',
+  },
+];
+---
+
+<BaseLayout title="Projects - Logan Reeder" description="Things Logan Reeder has built">
+  <div class="prose mx-6 max-w-full dark:prose-dark">
+    <h1><strong>My Stuff</strong></h1>
+    <table>
+      <thead>
+          <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        {projects.map((project) => (
+          <tr>
+            <td>{project.name}</td>
+            <td>{project.description}</td>
+            <td>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">Site</a>
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</BaseLayout>

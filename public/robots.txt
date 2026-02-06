@@ -1,0 +1,6 @@
+User-agent: PerplexityBot
+Disallow: /
+User-agent: Perplexity
+Disallow: /
+User-agent: *
+Allow: /
