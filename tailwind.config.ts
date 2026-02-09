@@ -3,7 +3,7 @@ import type { Config } from "tailwindcss";
 import typography from "@tailwindcss/typography";
 
 const config: Config = {
-  darkMode: ["class"],
+  darkMode: "class",
   content: ["./src/**/*.{astro,html,js,ts,md,mdx}"],
   safelist: ["dark"],
   theme: {
@@ -60,33 +60,6 @@ const config: Config = {
       },
       typography: ({ theme }: { theme: (path: string) => string }) => ({
         DEFAULT: {
-          css: {
-            color: theme("colors.foreground"),
-            a: {
-              color: theme("colors.primary.DEFAULT"),
-              "&:hover": {
-                color: theme("colors.primary.foreground"),
-              },
-            },
-            h1: { color: theme("colors.foreground") },
-            h2: { color: theme("colors.foreground") },
-            h3: { color: theme("colors.foreground") },
-            h4: { color: theme("colors.foreground") },
-            blockquote: {
-              color: theme("colors.muted.foreground"),
-              borderLeftColor: theme("colors.border"),
-            },
-            hr: { borderColor: theme("colors.border") },
-            strong: { color: theme("colors.foreground") },
-            code: { color: theme("colors.primary.DEFAULT") },
-            pre: {
-              color: theme("colors.foreground"),
-              backgroundColor: theme("colors.muted.DEFAULT"),
-            },
-            th: { color: theme("colors.foreground") },
-          },
-        },
-        dark: {
           css: {
             color: theme("colors.foreground"),
             a: {
