@@ -6,8 +6,6 @@ tags: ["philosophy", "metaphysics"]
 draft: true
 ---
 
-## Jigsaw Theorem
-
 Multiple independent facts that interlock rationally — each explaining or necessitating the others — indicate a true underlying structure. Disconnected or contradictory facts suggest falsehood or missing information.
 
 **Example:** The 2026 Epstein file release contains a drafted email that Jeffrey Epstein wrote for Bill Gates stating that Bill has likely contracted an STD from a woman he met up with during one of Jeffrey Epstein‘s parties.

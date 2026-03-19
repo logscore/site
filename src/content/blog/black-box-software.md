@@ -3,10 +3,8 @@ title: "Black Box Software"
 description: "Software is now a black box that anyone can mold to their desired output"
 pubDate: 2026-03-22
 tags: ["software", "development", "AI"]
-draft: true
+draft: false
 ---
-
-## Black Box Software
 
 <!-- Disclaimer: AI psychosis is absolutely real and its effects will be studied for years to come. -->
 
