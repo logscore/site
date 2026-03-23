@@ -1,0 +1,57 @@
+---
+title: "Black Box Software"
+description: "Software is now a black box that anyone can mold to their desired output"
+pubDate: 2026-03-23
+tags: ["software", "development", "AI"]
+draft: false
+---
+
+import { Image } from "astro:assets";
+import blackboxModel from "src/assets/blog/blackbox-software/blackbox-model.png";
+import blackboxModelWithAi from "src/assets/blog/blackbox-software/blackbox-model-with-ai.png";
+
+AI makes software trivial. Not all software, but that doesn't really matter.
+
+Software has always been a black box to those who consume it. We don't know the inner workings of Discords image storage system or the CPU scheduler for Windows 11, but we don't need to and most have no interest in it if offered to them.
+
+All the customer cares about is that images show up when they send them to friends, or that programs run smoothly when they need them. Put simply, they care that they get the expected output when they give a specific input. That's all. Everything else is to make that experience of getting the expected output better. UI/UX, performance optimizations, accessibility, scaling systems globally. It's all in service of the black box that customers interact with.
+
+<Image
+  src={blackboxModel}
+  alt="A black box of software taking an input from a user and returning an output to the user"
+  width={800}
+  loading="eager"
+/>
+
+If you wanted a change as a customer, you had to send an email, a DM, or fill out a contact form and just pray that some dev picks it up next time they're free.
+
+With AI though, the customer's relationship with software changes dramatically.
+
+It is still a black box. But now if someone wants a very specific piece of software to exist, they can go to their mediator (an LLM) that changes the black box on their behalf. This technology enables any person to create their own software. If they don't like how it looks, they can ask the LLM to change it. If they want a new feature, they can ask the LLM to add it.
+
+Is the code optimized? No. Is it ready to scale to millions of users? No. Is it terribly insecure and an eyesore for any experienced dev? Yeah, probably. But it works for them. It's personal and malleable.
+
+It isn't pretty, but it does exactly what they want it to do, even if it's ugly. It's personal software.
+
+<Image
+  src={blackboxModelWithAi}
+  alt="A black box of software taking an input from a user and returning an output to the user"
+  width={800}
+  loading="eager"
+/>
+
+Take for example [Plank](https://github.com/logscore/plank), a media server I made in a week and a half with an LLM. I've personally written about 30 percent of the code, with LLMs writing the rest. I made it because I wanted a better experience than Jellyfin and Plex, though they are phenomenal products. So, that's what I did. Is it perfect? No. it's a little unstable at times, but that's fine. Why? Because I can change it myself. In a weekend, I can architect and overhaul a feature to be faster, and be a more pleasurable experience for me and my family to use.
+
+Now, much of Plank is a black box to me. I don't particularly understand how the torrent streaming works at a low level and the FFmpeg transmuxing is beyond me, but I don't need to know that because when I want to stream the new season of Andor, it's one click and the episode starts playing. The black box works.
+
+This is where every non-technical person with any AI knowledge is going, and I hope this can help software devs to understand that people outside our tech world don't care about the guts of software. They just care that their input gets the right output from the magic black box in front of them.
+
+It's fine to point and laugh at the PM that vibe codes an app then gets absolutely pwned after bragging that "ENGINEERS ARE FINISHED!" on X. But let's not kid ourselves that people actually care how our software works on the inside. LLMs are a perfect example. The average person doesn't understand neural networks, post-training, or how an LLM knows that you meant Paris, France and not Paris, Texas (I don't know how that works either). They just know that when they ask it how to make a flat crust pizza, it gives them a recipe for flat crust pizza.
+
+Now, this isn't to say that AI makes software engineering obsolete. It simply splits the field with two bins. Infrastructure (kernels, scale, embedded systems, safety-critical) remains difficult and important work. A high level of expertise still matters where failure means billions of dollars or lives lost.
+
+But personal software? A cook book app for your mom, or a pomodoro Mac app? That was always within reach, AI just lowered the barrier of entry to near zero.
+
+Some people call this "the era of personal software" and I tend to agree with that term. Software now has the propensity to be deeply personal, with a non-technical person being able to put the object in their mind into the computer and have it work without years of study, practice and discipline. Chocolate was once for the noble class, now it's in gas stations.
+
+Software was once the sole domain of studied, experienced computer wizards. Now it's the domain of the every day person with 200 dollars and a clear idea. It won't be the Sistine Chapel, but it's theirs, and it does what _they_ want it to do.
